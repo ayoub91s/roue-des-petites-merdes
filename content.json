@@ -1,0 +1,324 @@
+[
+  {
+    "id": "doux-01",
+    "type": "doux",
+    "title": "Mot doux",
+    "text": "Même quand tu te sens comme une petite merde, sache que t'es ma petite merde préférée."
+  },
+  {
+    "id": "doux-02",
+    "type": "doux",
+    "title": "Mot doux",
+    "text": "T'as le droit d'avoir une journée de merde. Mais attention, le titre de petite merde est déjà pris par toi."
+  },
+  {
+    "id": "doux-03",
+    "type": "doux",
+    "title": "Mot doux",
+    "text": "J'espère que tu vas vite retrouver ton sourire. Sinon je vais être obligé de faire le clown, et personne ne mérite ça."
+  },
+  {
+    "id": "doux-04",
+    "type": "doux",
+    "title": "Mot doux",
+    "text": "T'es une sacrée petite merde, mais une petite merde qu'on est bien content d'avoir dans les parages."
+  },
+  {
+    "id": "doux-05",
+    "type": "doux",
+    "title": "Mot doux",
+    "text": "Si aujourd'hui c'est nul, on réessaiera demain. Et si demain c'est nul aussi, on insultera demain ensemble."
+  },
+  {
+    "id": "doux-06",
+    "type": "doux",
+    "title": "Mot doux",
+    "text": "Petit rappel : t'es beaucoup plus appréciée que tu ne le penses. Même quand tu racontes n'importe quoi."
+  },
+  {
+    "id": "conneries-01",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Plus qu'une douche avant Noël. Tiens bon, petite merde."
+  },
+  {
+    "id": "conneries-02",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Ton trou d'balle te souhaite une excellente journée. Il ne peut pas parler, donc je transmets."
+  },
+  {
+    "id": "conneries-03",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Félicitations ! Tu viens de gagner absolument rien. Mais avec amour."
+  },
+  {
+    "id": "conneries-04",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Selon une étude extrêmement sérieuse réalisée par moi-même, Léa est composée de 35 % de petite merde, 30 % d'adorable, 20 % de trou d'balle et 15 % de donut à la fraise. Les scientifiques sont formels : c'est un cas désespéré."
+  },
+  {
+    "id": "conneries-05",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "ALERTE INTERPOL : une dangereuse criminelle répondant au prénom de Léa a été aperçue près d'une boîte de donuts. Ne tentez pas de l'intercepter."
+  },
+  {
+    "id": "conneries-06",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "ALERTE MONDIALE. La CIA vient d'intercepter une photographie particulièrement inquiétante. Les experts sont formels : cette créature n'appartient à aucune espèce répertoriée sur Terre. Une enquête internationale est en cours. La NASA a été contactée."
+  },
+  {
+    "id": "conneries-07",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Interpol offre une récompense pour toute information permettant de retrouver Léa. Dernière localisation connue : devant des donuts à la fraise."
+  },
+  {
+    "id": "conneries-08",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Un donut à la fraise a porté plainte contre toi pour disparition inquiétante de plusieurs membres de sa famille."
+  },
+  {
+    "id": "conneries-09",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Les scientifiques confirment que ton trou d'balle possède probablement sa propre personnalité."
+  },
+  {
+    "id": "conneries-10",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Tu es officiellement interdite de séjour dans 47 pays. Motif : ta photo."
+  },
+  {
+    "id": "conneries-11",
+    "type": "conneries",
+    "title": "Connerie absolue",
+    "text": "Le ministère de l'Hygiène te rappelle qu'une douche avant Noël n'est pas une obligation, mais reste fortement recommandée."
+  },
+  {
+    "id": "boulot-01",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Christine vient de créer un ticket Jira : LÉA-001 — Retrouver le sourire. Priorité : critique."
+  },
+  {
+    "id": "boulot-02",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Sprint de deux semaines annulé. Nouveau sprint : survivre jusqu'au vendredi."
+  },
+  {
+    "id": "boulot-03",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Christine te rappelle de mettre à jour ton Jira. Même ton bonheur doit être documenté."
+  },
+  {
+    "id": "boulot-04",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Ton moral est en statut WIP. Et c'est parfaitement OK."
+  },
+  {
+    "id": "boulot-05",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Christine a identifié un ticket sans responsable. Malheureusement, c'est encore toi."
+  },
+  {
+    "id": "boulot-06",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "URGENT : Christine souhaite organiser un point de 30 minutes pour comprendre pourquoi tu n'as pas souri depuis 9 h 32."
+  },
+  {
+    "id": "boulot-07",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Ton bonheur a été ajouté au backlog. Christine demande une estimation en story points."
+  },
+  {
+    "id": "boulot-08",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Le sprint est terminé. Les tickets sont fermés. Christine vient d'en rouvrir douze."
+  },
+  {
+    "id": "boulot-09",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Ticket JIRA-404 : motivation introuvable. Solution de contournement : donut à la fraise."
+  },
+  {
+    "id": "boulot-10",
+    "type": "boulot",
+    "title": "Au bureau",
+    "text": "Christine vient de dire « juste un petit point rapide ». Tu sais ce que ça signifie."
+  },
+  {
+    "id": "recompenses-01",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Bon pour un café offert par ta grosse merde préférée."
+  },
+  {
+    "id": "recompenses-02",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Tu gagnes le droit de m'imposer une activité de ton choix."
+  },
+  {
+    "id": "recompenses-03",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Bon pour une pause de 15 minutes avec moi. T'en as de la chance, petite gourmande."
+  },
+  {
+    "id": "recompenses-04",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Tu viens de gagner un compliment personnalisé. Réclame-le auprès d'Ayoub."
+  },
+  {
+    "id": "recompenses-05",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Bon pour un donut à la fraise. Oui, encore un."
+  },
+  {
+    "id": "recompenses-06",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Tu viens de gagner le droit de choisir notre prochaine pause déjeuner."
+  },
+  {
+    "id": "recompenses-07",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Bon pour une petite attention surprise. À réclamer quand tu veux."
+  },
+  {
+    "id": "recompenses-08",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Tu gagnes un joker : la prochaine fois que tu dis une énorme connerie, je fais semblant de ne rien avoir entendu."
+  },
+  {
+    "id": "recompenses-09",
+    "type": "recompenses",
+    "title": "Petit bon",
+    "text": "Bon pour une séance de racontage de vie illimitée. Je fournis les oreilles."
+  },
+  {
+    "id": "missions-01",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission du jour : boire un verre de whisky. Avec modération, petite merde."
+  },
+  {
+    "id": "missions-02",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission secrète : fais-moi rire avant minuit. Récompense : à négocier."
+  },
+  {
+    "id": "missions-03",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission Interpol : adopte ton air le plus innocent possible pendant 10 secondes. On sait tous que c'est du cinéma."
+  },
+  {
+    "id": "missions-04",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission donut : trouve une excuse absolument ridicule pour mériter un donut à la fraise."
+  },
+  {
+    "id": "missions-05",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission spéciale : invente un nouveau surnom encore plus débile que « petite merde »."
+  },
+  {
+    "id": "missions-06",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission discrétion : place le mot « trou d'balle » dans une conversation avec moi sans éclater de rire."
+  },
+  {
+    "id": "missions-07",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission du jour : envoie-moi une photo avec ta pire tête. Interpol a besoin d'actualiser son dossier."
+  },
+  {
+    "id": "missions-08",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission express : accorde-toi 5 minutes de pause, sans avoir à les justifier."
+  },
+  {
+    "id": "missions-09",
+    "type": "missions",
+    "title": "Mission",
+    "text": "Mission secrète : choisis une chanson qui résume ton humeur du jour et fais-moi deviner pourquoi."
+  },
+  {
+    "id": "special-horoscope",
+    "type": "surprises",
+    "title": "Horoscope de la petite merde",
+    "text": "Les astres ont un message pour toi.",
+    "special": "horoscope"
+  },
+  {
+    "id": "special-jira",
+    "type": "surprises",
+    "title": "Ticket Jira de Christine",
+    "text": "Un incident critique vient de tomber.",
+    "special": "jira"
+  },
+  {
+    "id": "special-interpol",
+    "type": "surprises",
+    "title": "Dossier Interpol",
+    "text": "Un dossier confidentiel a été retrouvé.",
+    "special": "interpol"
+  },
+  {
+    "id": "special-courrier",
+    "type": "courriers",
+    "title": "Courrier de ton trou d’balle",
+    "text": "Tu as reçu une lettre très personnelle.",
+    "special": "courrier"
+  },
+  {
+    "id": "ticket-bronze",
+    "type": "tickets",
+    "tier": "bronze",
+    "title": "Ticket bronze",
+    "text": "Tu as gagné un ticket bronze !",
+    "special": "ticket"
+  },
+  {
+    "id": "ticket-argent",
+    "type": "tickets",
+    "tier": "argent",
+    "title": "Ticket argent",
+    "text": "Tu as gagné un ticket argent !",
+    "special": "ticket"
+  },
+  {
+    "id": "ticket-or",
+    "type": "tickets",
+    "tier": "or",
+    "title": "Ticket or",
+    "text": "Tu as gagné un ticket or !",
+    "special": "ticket"
+  }
+]
