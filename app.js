@@ -64,9 +64,26 @@ if(item.type==='missions'){$('result').insertAdjacentHTML('beforeend','<div clas
 if(item.type==='conneries'&&animations())$('result').animate([{transform:'rotate(-1deg)'},{transform:'rotate(1deg)'},{transform:'rotate(0)'}],{duration:350})}
 $('spin').onclick=()=>{if(spinning||!items.length)return;spinning=true;$('spin').disabled=true;$('result').classList.add('hidden');const category=chooseWeightedCategory(),item=chooseItem(category);if(!item){spinning=false;$('spin').disabled=false;return}const segment=wheelSegments.findIndex(s=>s.type===category),target=(360-(segment*45+22.5))%360,current=((angle%360)+360)%360,delta=(target-current+360)%360;angle+=1800+delta;$('wheelDisc').style.transitionDuration=animations()?'4s':'0s';$('wheelDisc').style.transform='rotate('+angle+'deg)';let tick=0;const ticking=$('sound').checked?setInterval(()=>{if(tick++<18)sound('tick')},180):null;setTimeout(()=>{if(ticking)clearInterval(ticking);const isNew=record(item);display(item,isNew);spinning=false;$('spin').disabled=false},animations()?4050:120)};
 function renderStats(){const unique=new Set(history.map(x=>x.id)),seen=items.filter(x=>unique.has(x.id)).length,total=items.length;const turns=history.filter(x=>!x.id.startsWith('cadeau-')).length;const gifts=history.filter(x=>x.id.startsWith('cadeau-')).length;$('spinCount').textContent=turns+' tours de roue';const basic=[['Trésors découverts',seen+' / '+total,total?seen/total*100:0],['Collection',total?Math.round(seen/total*100)+' %':'0 %',total?seen/total*100:0],['Tirages totaux',turns,null],['Cadeaux remportés',gifts,null]];const data=basic.concat(Object.keys(labels).map(t=>{const a=items.filter(x=>x.type===t),n=a.filter(x=>unique.has(x.id)).length;return [labels[t],n+' / '+a.length,a.length?n/a.length*100:0]}));$('stats').innerHTML=data.map(([name,num,pct])=>'<div class="card"><span>'+esc(name)+'</span><strong>'+esc(num)+'</strong>'+(pct===null?'':'<div class="progress"><span style="width:'+pct+'%"></span></div>')+'</div>').join('');$('filters').innerHTML=['all',...Object.keys(labels)].map(t=>'<button data-filter="'+t+'" class="'+(filter===t?'active':'')+'">'+(labels[t]||'Tout')+'</button>').join('');$('filters').querySelectorAll('button').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderStats()});const h=history.filter(x=>filter==='all'||x.type===filter);$('history').innerHTML=h.length?h.map(x=>'<div class="entry"><small>'+new Date(x.at).toLocaleString('fr-FR')+' · '+esc(labels[x.type]||x.type)+'</small><p><b>'+esc(x.title)+'</b> — '+esc(x.text)+'</p>'+(x.id.startsWith('cadeau-')?'<button class="small state-btn" data-claim="'+esc(x.id)+'">'+(claims[x.id]?'✓ Réclamée · Annuler':'🎁 Gagnée · Marquer réclamée')+'</button>':x.type==='missions'?'<button class="small state-btn" data-mission="'+esc(x.id)+'">'+(missionDone[x.id]?'✓ Accomplie · Annuler':'🎯 Découverte · Marquer accomplie')+'</button>':'')+'</div>').join(''):'<p class="sub">Aucun trésor découvert pour le moment.</p>'}
-$('history').addEventListener('click',e=>{const b=e.target.closest('[data-claim],[data-mission]');if(!b)return;if(b.dataset.claim){claims[b.dataset.claim]=!claims[b.dataset.claim]}else if(b.dataset.mission){missionDone[b.dataset.mission]=!missionDone[b.dataset.mission]}persistStates()});
-document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{$('history').addEventListener('click',e=>{const b=e.target.closest('[data-claim],[data-mission]');if(!b)return;if(b.dataset.claim){claims[b.dataset.claim]=!claims[b.dataset.claim]}else if(b.dataset.mission){missionDone[b.dataset.mission]=!missionDone[b.dataset.mission]}persistStates()});
-document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));['wheel','treasures'].forEach(t=>$(t).classList.toggle('hidden',t!==b.dataset.tab));renderStats()});
+// Actions dans Mes trésors : un seul écouteur délégué, conservé après chaque rafraîchissement.
+$('history').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-claim],button[data-mission]');
+  if(!b || !$('history').contains(b))return;
+  if(b.hasAttribute('data-claim')){
+    const id=b.dataset.claim;
+    claims[id]=!claims[id];
+    toast(claims[id]?'🎁 Cadeau marqué comme réclamé !':'🎁 Réclamation annulée.');
+  }else{
+    const id=b.dataset.mission;
+    missionDone[id]=!missionDone[id];
+    toast(missionDone[id]?'🎯 Mission accomplie !':'🎯 Accomplissement annulé.');
+  }
+  persistStates();
+});
+document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));
+  ['wheel','treasures'].forEach(t=>$(t).classList.toggle('hidden',t!==b.dataset.tab));
+  renderStats();
+});
 function theme(){const h=new Date().getHours();const p=h>=6&&h<11?'morning':h>=11&&h<18?'day':h>=18&&h<22?'evening':'night';document.body.classList.remove('morning','evening','night');if(p!=='day')document.body.classList.add(p);const sky=$('sky');sky.innerHTML='<span class="celestial">'+(p==='night'?'🌙':p==='evening'?'🌇':'☀️')+'</span>'+(p==='night'?Array.from({length:15},(_,i)=>'<span class="sky-star" style="left:'+(i*17%90+3)+'%;top:'+(i*29%75+8)+'%;animation-delay:'+(i*.4)+'s">✦</span>').join(''):'');const slot=Math.floor(Date.now()/1200000);const messages=hourly[p];$('hourly').textContent=messages[(slot+Math.floor(h/4))%messages.length]}
 theme();setInterval(theme,60000);
 $('motion').checked=localStorage.getItem('petites-merdes-motion')!=='off';$('sound').checked=localStorage.getItem('petites-merdes-sound')!=='off';$('motion').onchange=()=>localStorage.setItem('petites-merdes-motion',$('motion').checked?'on':'off');$('sound').onchange=()=>localStorage.setItem('petites-merdes-sound',$('sound').checked?'on':'off');
